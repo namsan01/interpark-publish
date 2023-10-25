@@ -6,86 +6,180 @@
     <title>인터파크</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrap">
       <!-- 상단 영역 -->
       <header class="header">
-        <!-- 레이아웃 : div -->
-        <div class="header-inner">
-          <div class="header-top">
-            <div class="header-top-left">
-              <a href="index.html" class="logo"></a>
+        <!-- 레이아웃 영역  -->
+        <div class="h-inner">
+          <div class="h-top">
+            <div class="h-top-left">
+              <a href="index.html" class="logo"> </a>
               <!-- 검색은 div 하나 주자 -->
-              <div class="header-search">
+              <div class="h-search">
                 <!-- 사용자가 데이터를 입력한다. -->
-                <form class="search-form">
+                <form class="search-f">
                   <input type="text" class="search-word" />
                   <input type="button" value="검색" class="search-bt" />
                 </form>
               </div>
             </div>
-
-            <div class="header-top-right">
-              <ul class="member-menu">
+            <div class="h-top-right">
+              <ul class="mymenu">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li>
                   <a href="#" id="mypage-bt" class="mypage-bt">
                     마이페이지
-                    <img src="images/icon_arrow.svg" alt="" />
+                    <img src="./images/arrow.svg" alt="" />
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="header-bottom">
-            <!-- 카테고리 메뉴 -->
-            <ul class="header-cate">
+          <div class="h-bottom">
+            <ul class="h-bottom-cate">
               <li>
                 <a href="#">
-                  <img src="images/icon_tour.png" alt="" />
+                  <img src="./images/icon_tour.png" alt="" />
                   투어
                 </a>
               </li>
               <li>
-                <a href="#"><img src="images/icon_ticket.png" alt="" />티켓</a>
+                <a href="#">
+                  <img src="./images/icon_ticket.png" alt="" />
+                  티켓
+                </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/icon_shopping.png" alt="" />쇼핑</a
-                >
+                  <img src="./images/icon_shopping.png" alt="" />
+                  쇼핑
+                </a>
               </li>
               <li>
-                <a href="#"><img src="images/icon_book.png" alt="" />도서</a>
+                <a href="#">
+                  <img src="./images/icon_book.png" alt="" />
+                  도서
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="images/icon_triple.png" alt="" />트리플</a
-                >
+                <a href="#">
+                  <img src="./images/icon_triple.png" alt="" />
+                  트리플
+                </a>
               </li>
               <li>
-                <a href="#" class="icon-hot"><img src="images/icon_special.png" alt="" />여행초특가</a>
+                <a href="#" id="special-hot" class="special-hot">
+                  <img src="./images/icon_special.png" alt="" />
+                  여행초특가
+                </a>
               </li>
             </ul>
-            <!-- 오늘이벤트 메뉴 -->
-            <ul class="header-today-menu">
-              
-              <li>
-                <a href="#"
-                  ><img src="images/icon_gnb_nol.png" alt="" />항공 즉시할인</a
-                >
+            <ul class="h-today-menu">
+              <li class="event">
+                <a href="#">
+                  <img src="./images/icon_gnb_nol.png" alt="" />
+                  항공 즉시할인
+                </a>
               </li>
-
             </ul>
-
           </div>
         </div>
       </header>
       <!-- 메인 영역 -->
-      <div class="main"></div>
+      <div class="main">
+        <!-- 비주얼 영역 -->
+        <section class="visual">
+          <div class="visual-inner">
+            <!-- Swiper -->
+            <div class="swiper visual-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- 실제 내용 배치 -->
+                  <div class="visual-slide-item">
+                    <a href="#">
+                      <img src="./images/v1.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item">
+                    <a href="#">
+                      <img src="./images/v2.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item">
+                    <a href="#">
+                      <img src="./images/v3.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item">
+                    <a href="#">
+                      <img src="./images/v4.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item">
+                    <a href="#">
+                      <img src="./images/v5.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="visual-slide-item">
+                    <a href="#">
+                      <img src="./images/v6.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="visual-slide-prev"></button>
+            <button class="visual-slide-next"></button>
+          </div>
+          <div>
+          </div>
+        </section>
+      </div>
       <!-- 하단 영역 -->
       <footer class="footer"></footer>
     </div>
   </body>
 </html>
+
+<script>
+  console.log(" html 태그 끝 에 기재가 정말 좋은 자리");
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  // swiper를 활용해요
+  var swiper = new Swiper(".visual-slide", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true ,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      speed: 500,
+      navigation: {
+        nextEl: ".visual-slide-next",
+        prevEl: ".visual-slide-prev",
+      },
+  });
+</script>
