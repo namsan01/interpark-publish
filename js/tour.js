@@ -26,10 +26,13 @@ window.addEventListener("load", function () {
 
               <div class="swiper-slide">
                 <div class="tour-slide-item">
+
                   <a href="${obj.url}" class="tour-link">
+
                   <div class="tour-img">
                     <img src="${obj.image}" alt="${obj.desc}">
                   </div>
+
                   <div class="tour-info">
                     <ul class="tour-good-list">
                       <li>
@@ -47,13 +50,12 @@ window.addEventListener("load", function () {
                     <b class="tour-good-info-won">${obj.price}</b>
                     원~  
                   </li>
-                    <li>
-
-                    </li>
+                   
                     </ul>
-
                   </div>
+
                 </a>
+
                 </div>
               </div>
       

@@ -48,9 +48,7 @@ window.addEventListener("load", function () {
             </span>
           </li>
           <div class="ticket-badge">
-            <i class="ticket-badge-blue">${
-              obj.badge === "" ? "" : obj.badge
-            }</i>
+            <i class="${obj.class}">${obj.badge === "" ? "" : obj.badge}</i>
           </div>
           </ul>
         </div>
