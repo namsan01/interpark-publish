@@ -1,4 +1,7 @@
 window.addEventListener("load", function () {
+  function numberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
   const fileName = "tour.json";
 
   const xhr = new XMLHttpRequest();
@@ -47,7 +50,9 @@ window.addEventListener("load", function () {
                       <p class="tour-good-info-desc">
                       ${obj.desc}
                     </p>
-                    <b class="tour-good-info-won">${obj.price}</b>
+                    <b class="tour-good-info-won">${numberWithCommas(
+                      obj.price
+                    )}</b>
                     원~  
                   </li>
                    

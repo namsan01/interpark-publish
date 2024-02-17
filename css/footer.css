@@ -1,0 +1,323 @@
+.footer {
+  margin: 3rem auto 0;
+  padding: 0;
+  background-color: #fff;
+  height: 500px;
+}
+
+.footer-inner {
+  max-width: none;
+  height: 5rem;
+  padding: 0;
+  margin-top: 0;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.footer-policy-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  margin: 0 auto;
+  max-width: 128rem;
+}
+
+.footer-policy-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 3.1rem;
+  box-sizing: border-box;
+}
+
+.footer-policy-list li:first-child {
+  padding-left: 0px;
+}
+
+.footer-policy-list li:first-child::before {
+  display: none;
+}
+.footer-policy-list > li:last-child {
+  padding-right: 0px;
+}
+
+.footer-policy-list > li:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  line-height: 1.7rem;
+  left: 0;
+  width: 0.1rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.footer-policy-list li button::after {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.6rem;
+  margin-left: 0.4rem;
+  background: url(../images/icon_arrow.svg) no-repeat 50%;
+  vertical-align: 0.1rem;
+}
+
+.footer-policy-list li button {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.footer-select {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 3.8rem;
+  padding: 1.6rem;
+  background: #fff;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  z-index: 1;
+}
+
+.footer-policy-list li:hover .footer-select {
+  display: block;
+}
+
+.footer-select li {
+  display: block;
+  padding: 0;
+  text-align: left;
+  line-height: 1.8rem;
+  white-space: nowrap;
+  color: #333;
+}
+
+.footer-company-info {
+  display: flex;
+  justify-content: center;
+}
+
+.company-info-left {
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-right: 1rem;
+  }
+}
+.company-info-address {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  border-right: 1px solid #d9d9d9;
+  padding: 0 21px 0 0;
+  width: 497px;
+  ul {
+    display: flex;
+    li:nth-child(1) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(3) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(5) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.footer-cs {
+  display: flex;
+  color: #666;
+  margin-top: 10px;
+  p {
+    font-size: 1.3rem;
+    color: #111;
+    font-weight: 700;
+    text-align: left;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    display: flex;
+    li:nth-child(1) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #666;
+      height: 13px;
+    }
+  }
+}
+
+.footer-cs-number {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  margin-bottom: 10px;
+  ul {
+    display: flex;
+
+    li:nth-child(1) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(2) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(3) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.internet-cs {
+  margin-bottom: 10px;
+  p {
+    font-size: 1.2rem;
+    color: #111;
+    font-weight: 700;
+    text-align: left;
+
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    display: flex;
+
+    li:nth-child(1) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(2) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(3) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.footer-notice {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: hsla(0, 0%, 7%, 0.4);
+}
+
+.company-info-right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.1rem;
+  p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-right: 1rem;
+  }
+}
+
+.companypark-info-address {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  width: 510px;
+  padding-left: 21px;
+
+  ul {
+    display: flex;
+    .none {
+      border-right: none;
+    }
+    li:nth-child(1) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(3) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+    }
+    li:nth-child(5) {
+      display: inline;
+      margin-right: 5px;
+      padding-right: 5px;
+      border-right: solid 1px #d9d9d9;
+      margin-bottom: 10px;
+    }
+  }
+  .footer-cs {
+    display: flex;
+    color: #666;
+    margin-top: 10px;
+    p {
+      font-size: 1.3rem;
+      color: #111;
+      font-weight: 700;
+      text-align: left;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      display: flex;
+      li:nth-child(1) {
+        display: inline;
+        margin-right: 5px;
+        padding-right: 5px;
+        border-right: solid 1px #666;
+      }
+    }
+    .footer-none {
+      li {
+        border-right: none;
+      }
+    }
+  }
+}
