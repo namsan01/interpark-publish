@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
     
         <div class="swiper-slide">
         <div class="live-slide-item">
-          <a href="${obj.url}" class="live-link">
+          <a href="#" class="live-link">
             <div class="live-img">
               <img src="${obj.image}" alt="">
             </div>

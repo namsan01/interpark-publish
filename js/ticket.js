@@ -26,7 +26,7 @@ window.addEventListener("load", function () {
   
       <div class="swiper-slide">
       <div class="ticket-slide-item">
-        <a href="${obj.url}" class="ticket-link">
+        <a href="#" class="ticket-link">
         <div class="ticket-img">
           <img src="${obj.image}" alt="${obj.tit}">
           <span>${obj.rank}</span>

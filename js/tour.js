@@ -30,7 +30,7 @@ window.addEventListener("load", function () {
               <div class="swiper-slide">
                 <div class="tour-slide-item">
 
-                  <a href="${obj.url}" class="tour-link">
+                  <a href="#" class="tour-link">
 
                   <div class="tour-img">
                     <img src="${obj.image}" alt="${obj.desc}">
